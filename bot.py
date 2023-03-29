@@ -11,6 +11,6 @@ async def on_ready():
 #async def funcname(parameter_list): (async是一個協程名) 
     print(">> Bot is online <<")
 
-bot.run('MTA5MDQ3NzYzMzA1MTA0MTg2Mg.G4iGSC.anl5aYz9pwIgRtfu1cfP5yAwOpakdZB_OsnjRY')
+bot.run('MTA5MDQ3NzYzMzA1MTA0MTg2Mg.GyC6LF.8LWaEfQqNAMNfBT0QrCmbefkyKHfrjORAIGLE8')
 #token必為字串
 
