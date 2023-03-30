@@ -42,7 +42,7 @@ async def ping(ctx):
 async def mange(ctx):
     pic = discord.Flie(jdata['pic'])
     await ctx.send(f'you say {file = pic} ?'
-//"pic": 'D\\where\\where\\123.jpg'
+//"pic": 'D\\where\\where\\123.jpg' (json)
     
     
 bot.run('MTA5MDQ3NzYzMzA1MTA0MTg2Mg.GyC6LF.8LWaEfQqNAMNfBT0QrCmbefkyKHfrjORAIGLE8')
