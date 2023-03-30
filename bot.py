@@ -38,7 +38,12 @@ async def ping(ctx):
     #bot.latency = bot 延遲
 
 
-
+@bot.command()
+async def mange(ctx):
+    pic = discord.Flie('D\\where\\where\\123.jpg')
+    await ctx.send(f'you say {123.jpg} ?')
+    
+    
 bot.run('MTA5MDQ3NzYzMzA1MTA0MTg2Mg.GyC6LF.8LWaEfQqNAMNfBT0QrCmbefkyKHfrjORAIGLE8')
 #token必為字串
 
