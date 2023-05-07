@@ -19,14 +19,14 @@ async def on_member_join(member):
 #加入群組的成員 member只能放一個(不能多放)
     #print(f'{member} join!')
     #會在終端機印出成員加入(XXXjoin)字
-    channel = bot.get_channel(1090206193785507860)
+    channel = bot.get_channel("discord ID (CLIENT ID)")
     await channel.send(f'{member} join!')
     #如discord.py網頁上 指令為this function could be a coroutine = 他是協程 要用await指令
 
 @bot.event
 async def on_member_remove(member):
     #print(f'{member} leave!')
-    channel = bot.get_channel(1090206193785507860)
+    channel = bot.get_channel("discord ID (CLIENT ID)")
     await channel.send(f'{member} leave!')
 
 @bot.command()
