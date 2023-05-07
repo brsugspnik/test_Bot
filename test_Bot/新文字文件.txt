@@ -1,0 +1,36 @@
+import discord
+from discord.ext import commands
+from core.classes import Cog_Extension
+import json
+
+with open('setting.json','r',encoding='utf8') as jfile:
+	jdata = json.load(jfile)
+
+class Event(cog_Extension):
+    #@bot.event
+    @commands.cog.listener()
+    async def on_member_join(self,member):
+    #加入群組的成員 member只能放一個(不能多放)
+        #print(f'{member} join!')
+        #會在終端機印出成員加入(XXXjoin)字
+        channel = self.bot.get_channel(1090206193785507860)
+        await channel.send(f'{member} join!')
+        #如discord.py網頁上 指令為this function could be a coroutine = 他是協程 要用await指令
+
+    #@bot.event
+    async def on_member_remove(self,member):
+    	#print(f'{member} leave!')
+    	channel = self.bot.get_channel(1090206193785507860)
+    	await channel.send(f'{member} leave!')
+
+    @commands.cog.listener()
+    async def on_message(self,msg):
+        if msg.content == 'apple':
+        if msg.content == 'apple' and msg .author != self.bot.user:
+	#if msg.content.endswith('apple'):
+	    await msg.channel.send('hi')
+	    #await msg.channel.send('apple')
+
+def setup(bot):
+	bot.add_cog(Event(bot))
+
